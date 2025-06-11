@@ -26,5 +26,13 @@ namespace MKregiel.Sample.Web.App.Controllers
 
             return View();
         }
+
+        public ActionResult Calculate(int a, int b)
+        {
+            return Json(new
+            {
+                result = a + b,
+            });
+        }
     }
 }
